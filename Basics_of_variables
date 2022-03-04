@@ -1,0 +1,112 @@
+
+
+.<<<<<<<<<<<<<<<<<.............Variables...............>>>>>>>>>>>>>>>>>>>>>>>>.
+
+* Defination with Example
+* Rules for Naming
+* 5 Cases
+* Good Variables and Bad Vabiables
+* Local Variables and Global Vabiables
+* variables-naming-conventions 
+....................................................................................................................
+=> Defination of Variables: "A Python variable is a reserved memory location to store value".
+                          In other words, a variable in a Python program gives data
+                          to the computer for processing. 
+
+"VARIABLE is a memory/location in which the data is stored. Whose value we can change that is called a VARIABLE. You can give any name to the VARIABLE and you can store anything in the variable."
+
+Example: Number,String,Dictionary.
+
+....................................................................................................................
+
+=> Rules for Naming:  Keep these 3 rules always in your mind :
+
+The name starts with either some - Letter or an _ (underscore).
+
+Only letters, underscore or numbers can be present in the Name (no special characters).
+
+It is Case Sensitive (means var, VAR, Var are different variables).
+
+Correct Names - variable, var123, var_12, _var, _12
+Incorrect Names - var@iable, 123var, var.123
+Different Names - varX, varx, Varx, VarX  
+....................................................................................................................
+
+=> 5 Cases
+
+The most common case types:
+1). Camel case
+2). Snake case
+3). Kebab case
+4). Pascal case
+5). Upper case (with snake case)
+
+1). camelCase
+camelCase must (1) start with a lowercase letter and (2) the first letter of every new subsequent word has its first letter capitalized and is compounded with the previous word.
+
+An example of camel case of the variable (camel case var) is (camelCaseVar).
+
+2). snake_case
+snake_case is as simple as replacing all spaces with a "_" and lowercasing all the words. It's possible to snake_case and mix camelCase and PascalCase but imo, that ultimately defeats the purpose.
+
+An example of snake case of the variable (snake case var) is (snake_case_var).
+
+3). kebab-case
+kebab-case is as simple as replacing all spaces with a "-" and lowercasing all the words. It's possible to kebab-case and mix camelCase and PascalCase but that ultimately defeats the purpose.
+
+An example of kebab case of the variable (kebab case var) is (kebab-case-var).
+
+4). PascalCase
+PascalCase has every word starts with an uppercase letter (unlike camelCase in that the first word starts with a lowercase letter).
+
+An example of pascal case of the variable (pascal case var) is (PascalCaseVar).
+
+Note: It's common to see this confused for camel case, but it's a separate case type altogether.
+
+5). UPPER_CASE_SNAKE_CASE
+UPPER_CASE_SNAKE_CASE is replacing all the spaces with a "_" and converting all the letters to capitals.
+
+an example of upper case snake case of the variable (upper case snake case var) is (UPPER_CASE_SNAKE_CASE_VAR).
+....................................................................................................................
+
+=> Good Variables and Bad Vabiables
+
+A good variable name should:
+
+1). Be clear and concise.
+2). Be written in English. 
+3). A general coding practice is to write code with variable names in English, as that is the most likely common language between programmers. Thus, variable names such as muuttuja (which is also not a good name on other levels) should be avoided.
+4). Not contain special characters. Python supports use of special characters by way of various encoding options that can be given in a program.
+5). That said, it is better to avoid variables such as lämpötila because encoding issues can arise in some cases. Better to stick to the standard printable ASCII character set to be safe.
+6). Not conflict with any Python keywords, such as for, True, False, and, if, or else. These are reserved for speical operations in Python and cannot be used as variable names.
+....................................................................................................................
+
+=> Local Variables and Global Vabiables
+
+"The main difference between Global and local variables is that global variables can be accessed globally in 
+the entire program, whereas local variables can be accessed only within the function or block in which they are 
+defined." 
+
+v1 = "Hey, I am Global Variable!, I can be used everywhere in the program."               .........#globalvariable  
+
+def func1():  
+    v2="Hey, I am Local Variable!, I can be used within this block only in the program."  ..........#localvariable  
+    print(v2)  
+func1()         #calling func1  
+  
+def func2():    
+    print(v1)   
+func2()         #callin func2  
+
+
+output:
+Hey, I am Local Variable!, I can be used within this block only in the program.
+Hey, I am Global Variable!, I can be used everywhere in the program.
+
+....................................................................................................................
+
+=> variables-naming-conventions : The rules and conventions for naming your variables can be summarized as follows: 
+
+"Variable names are case-sensitive.... The convention, however, is to always begin your variable names with a letter, not " $ " or " _ ". Additionally, the dollar sign character, by convention, is never used at all."
+....................................................................................................................
+
